@@ -83,6 +83,28 @@ Questionário pós uso.
 
 ---
 
+## Hipótese 04 — Confiança baseada em correção
+
+> Usuários tendem a confiar mais no assistente quando ele reconhece dúvidas, pede confirmação e permite correções naturais.
+
+### Como validar:
+
+Testes observacionais com lançamentos ambíguos.
+
+### Sinais positivos:
+
+- Usuário aceita responder perguntas de categorização;
+- Usuário corrige lançamentos sem frustração;
+- Redução de erros de classificação.
+
+### Métrica inicial:
+
+- Número de correções por sessão;
+- Taxa de sucesso nas correções.
+
+---
+
+
 # 👥 Público inicial de validação
 
 ## Fase 1 — Testes controlados
@@ -143,7 +165,11 @@ Pedir uma dica financeira.
 
 ## Cenário 04
 
-Corrigir uma categoria.
+Corrigir:
+
+- uma categoria incorreta;
+- um lançamento classificado como despesa em vez de meta;
+- uma interpretação ambígua feita pelo assistente.
 
 ---
 
@@ -219,11 +245,20 @@ Após os testes, priorizar:
 
 ## Versão atual
 
-MVP funcional em desenvolvimento com:
+MVP funcional em evolução contínua com:
 
-- Lovable
-- Vibe Coding
-- Iterações diárias baseadas em testes reais
+- Lovable + Vibe Coding
+- Iterações diárias orientadas por testes reais
+- Correções baseadas em comportamento do agente
+- Parser financeiro com regras determinísticas
+- Sistema de categorização com fallback por confiança
+
+Nesta fase, o produto já demonstra:
+
+- reconhecimento de merchants e serviços recorrentes;
+- metas separadas de despesas;
+- correções contextuais;
+- insights financeiros mais humanos e personalizados.
 
 ## Próximo marco
 
