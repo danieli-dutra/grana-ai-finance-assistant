@@ -191,6 +191,83 @@ O Grana.ai começa a apresentar sinais consistentes de estabilidade e se aproxim
 
 ---
 
+## Refinamentos Pós-Sprint
+
+### Ajustes realizados após testes reais
+
+Após ciclos de testes manuais no ambiente Lovable, foram identificadas inconsistências no comportamento do agente financeiro. A sprint passou a incluir refinamentos incrementais focados em interpretação contextual, categorização e UX conversacional.
+
+#### Melhorias implementadas
+
+- Parser financeiro refinado;
+- Melhorias na categorização determinística;
+- Metas financeiras desacopladas de despesas;
+- Correções contextuais ("isso era meta");
+- Streaming reconhecido como categoria própria;
+- Pix, bônus e reembolso diferenciados como receitas;
+- Saudação dinâmica por período do dia;
+- Health Score financeiro integrado ao dashboard;
+- Insights financeiros mais contextuais.
+
+#### Casos corrigidos
+
+**Streaming**
+
+Entrada:
+
+`paguei amazon prime 16,90`
+
+Resultado esperado:
+
+Categoria: `Streaming`
+
+---
+
+**Meta financeira**
+
+Entrada:
+
+`salvei 50 para placa de vídeo`
+
+Resultado esperado:
+
+- Atualizar meta;
+- Não registrar como despesa;
+- Não impactar gráfico de gastos.
+
+---
+
+**Correção contextual**
+
+Entrada:
+
+`isso era meta`
+
+Resultado esperado:
+
+O agente deve localizar o último lançamento relacionado e corrigir o tipo da transação.
+
+---
+
+**Receitas diferenciadas**
+
+Exemplos:
+
+`recebi pix 55`  
+`recebi bônus de 300`  
+`recebi reembolso de 45`
+
+Resultado esperado:
+
+Classificação correta por tipo de receita.
+
+#### Problemas ainda em refinamento
+
+- Interpretação contextual de saúde financeira;
+- Mensagens dinâmicas do card Health Score;
+- Casos ambíguos ainda dependem de refinamento do parser;
+- Ampliação do mapeamento determinístico de categorias.
+
 # Próxima sprint
 
 Sprint 05:
