@@ -1,6 +1,6 @@
 # 💰 Grana.ai
 
-![Status](https://img.shields.io/badge/status-concluído-7C5CFF)
+![Status](https://img.shields.io/badge/status-active%20development-7C5CFF)
 ![Projeto](https://img.shields.io/badge/DIO-Lab%20Vibe%20Coding-blue)
 ![Feito com](https://img.shields.io/badge/feito%20com-Lovable-purple)
 
@@ -45,6 +45,69 @@ Ele entende o tipo de transação, classifica a categoria e atualiza o que for n
 
 ---
 
+## 🧠 Como o agente toma decisões
+
+O comportamento do assistente combina:
+
+### 1. Parser financeiro determinístico
+Interpreta mensagens em linguagem natural.
+
+Exemplos:
+
+- "gastei 30 no almoço"
+- "recebi bônus de 200"
+- "guardei 50 para viagem"
+
+O sistema extrai automaticamente:
+
+- tipo da transação (receita, despesa ou meta);
+- valor monetário;
+- categoria financeira;
+- intenção do usuário;
+- contexto da conversa.
+
+### 2. Regras de categorização
+Algumas categorias utilizam mapeamento contextual para reduzir erros.
+
+Exemplos:
+
+| Entrada | Categoria |
+|---------|------------|
+| Netflix | Streaming |
+| Amazon Prime | Streaming |
+| Farmácia | Saúde |
+| Mercado | Alimentação |
+| Internet | Moradia |
+
+Quando não há confiança suficiente, o sistema pergunta antes de registrar.
+
+Exemplo:
+
+Entrada:
+
+```txt
+comprei 50
+```
+
+Resposta:
+
+```txt
+Em qual categoria esse gasto entra?
+```
+
+### 3. Contexto conversacional
+O agente mantém contexto do último lançamento para permitir correções naturais.
+
+Exemplo:
+
+```txt
+isso era meta
+```
+
+O sistema entende o contexto e corrige automaticamente.
+
+---
+
 ## 🎯 O que esse projeto resolve
 
 Mais do que registrar gastos, o Grana.ai busca resolver problemas reais:
@@ -61,13 +124,14 @@ A proposta aqui é reduzir fricção e aumentar consciência.
 ## ✨ Principais funcionalidades
 
 - 🧾 registro de gastos usando linguagem natural  
-- 🏷️ categorização automática (incluindo streaming e compras online)  
+- 🏷️ categorização automática (incluindo streaming e compras online)
+- 🤔 confirmação inteligente quando há baixa confiança na categorização
 - 🎯 metas financeiras com acompanhamento de progresso  
 - 💰 contribuição para metas direto pela conversa  
 - 📈 sugestão automática de poupança baseada na sobra do mês  
 - 📊 dashboard com gráfico e legenda  
 - 🔔 notificações leves para confirmação de ações  
-- 🧠 insights baseados em comportamento  
+- 🧠 insights baseados em comportamento 
 
 ---
 
@@ -95,24 +159,18 @@ O Grana.ai está evoluindo com base em testes reais e iterações contínuas.
 
 ---
 
-## 🧩 Estrutura do app
+## 🧩 Estrutura da experiência
 
-A experiência foi pensada como uma “carteira pessoal digital”.
+A experiência foi reorganizada como uma carteira financeira unificada.
 
-### 🟣 Início
-- receitas, despesas e saldo  
-- resumo das metas  
-- mini dashboard  
+### 🏠 Carteira principal
+- receitas, despesas e saldo
+- conversa com o assistente
+- metas financeiras
+- dashboard por categoria
+- saúde financeira
 
-### 💬 Chat
-- registrar gastos  
-- tirar dúvidas  
-- receber insights  
-
-### 🎯 Metas
-- progresso visual  
-- histórico  
-- atualização automática  
+Tudo acontece em uma única interface, reduzindo fricção e tornando o uso mais natural.
 
 ---
 
@@ -127,7 +185,7 @@ A intenção nunca foi impressionar pelo excesso, mas pela simplicidade.
 
 ---
 
-## 🔄 Evolução do Produto
+## 🔄 Evolução Visual do Produto
 
 ### Protótipo
 ![Prototype](./assets/testing/prototipo-grana-ai.png)
@@ -137,14 +195,55 @@ A intenção nunca foi impressionar pelo excesso, mas pela simplicidade.
 
 ---
 
-## 🛠️ Tecnologias e ferramentas
+## 🚀 Evolução do Produto
 
-- 🧠 Lovable  
-- 🤖 ChatGPT  
-- 🎨 Figma  
-- 🧩 UX/UI Design  
-- ⚙️ lógica baseada em regras  
+### Fase 1 — Protótipo
+Foco em registrar gastos via conversa.
 
+Problemas encontrados:
+- dependência excessiva do chat;
+- pouca clareza visual;
+- respostas repetitivas.
+
+### Fase 2 — Carteira Financeira
+Centralização da experiência em uma única tela.
+
+Melhorias:
+- dashboard integrado;
+- metas visíveis;
+- saldo e despesas em destaque.
+
+### Fase 3 — Inteligência Contextual
+Refinamento do comportamento do agente.
+
+Melhorias:
+- categorização determinística;
+- metas financeiras;
+- correções contextuais;
+- insights financeiros.
+
+---
+
+## 🛠️ Tecnologias e stack
+
+### Produto & Desenvolvimento
+- Lovable (Vibe Coding)
+- React + Frontend gerado
+- TypeScript
+- Supabase (persistência e autenticação)
+- GitHub
+
+### IA & Lógica Conversacional
+- Engenharia de prompts
+- Parser determinístico
+- Regras contextuais
+- Interpretação de linguagem natural
+
+### Produto & UX
+- UX/UI Design
+- Product Thinking
+- Testes iterativos
+  
 ---
 
 ## 🔄 Reflexão sobre o processo
@@ -247,4 +346,4 @@ O Grana.ai combina conversa e visualização para simplificar o controle finance
 
 ## 👩‍💻 Sobre mim
 
-Projeto desenvolvido por Danieli Dutra como parte da transição para a área de tecnologia, com foco em UX, produto e desenvolvimento.
+Projeto desenvolvido por Danieli Dutra como laboratório prático de UX, produto, IA conversacional e desenvolvimento full stack, com foco em experiências digitais centradas no usuário.
