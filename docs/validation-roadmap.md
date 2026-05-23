@@ -326,18 +326,22 @@ Nesta fase, o produto já demonstra:
 * reconhecimento de merchants recorrentes (Netflix, Amazon Prime, farmácia, internet etc.);
 * diferenciação entre receitas, despesas e metas;
 * fallback por confiança para entradas ambíguas;
-* correções naturais via contexto conversacional;
+* fluxo inicial de correções contextuais em evolução;
 * respostas mais humanas e contextualizadas;
 * comportamento orientado a hábitos financeiros.
 
 ## Próximo marco
 
-Realização dos primeiros testes externos controlados com familiares, amigos e colegas.
+Estabilização final da arquitetura conversacional antes dos primeiros testes externos controlados.
 
-Objetivos da fase:
+Foco imediato:
 
-- validar clareza da experiência;
-- medir confiança no assistente;
-- identificar fricções conversacionais;
-- testar precisão da categorização;
-- coletar feedback para refinamento do produto.
+- correction state machine;
+- memória contextual persistente;
+- recálculo mensal do dashboard;
+- refinamento do Financial Health;
+- redução de respostas repetitivas.
+
+Após estabilização:
+
+Primeiros testes controlados com familiares, amigos e colegas.
