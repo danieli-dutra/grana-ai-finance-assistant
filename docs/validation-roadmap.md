@@ -133,6 +133,33 @@ Testes com entradas incompletas ou ambíguas.
 
 ---
 
+## Hipótese 06 — Saúde financeira aumenta percepção de valor
+
+> Usuários percebem mais valor no produto quando o assistente interpreta sua situação financeira e oferece contexto personalizado.
+
+### Como validar:
+
+Testes de uso + feedback qualitativo.
+
+### Exemplos:
+
+- "como está minha saúde financeira?"
+- "estou gastando muito?"
+- "como estou financeiramente?"
+
+### Sinais positivos:
+
+- Usuário considera a análise útil;
+- Usuário sente que o sistema "entende" sua situação;
+- Usuário retorna para acompanhar evolução.
+
+### Métrica inicial:
+
+- percepção de utilidade da análise (1 a 5);
+- intenção de reutilização do assistente.
+
+---
+
 
 # 👥 Público inicial de validação
 
