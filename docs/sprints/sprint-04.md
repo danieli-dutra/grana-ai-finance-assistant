@@ -261,17 +261,60 @@ Resultado esperado:
 
 Classificação correta por tipo de receita.
 
-#### Problemas ainda em refinamento
 
-- Interpretação contextual de saúde financeira;
-- Mensagens dinâmicas do card Health Score;
-- Casos ambíguos ainda dependem de refinamento do parser;
-- Ampliação do mapeamento determinístico de categorias.
+#### ⚠️ Problemas ainda em refinamento
 
-# Próxima sprint
+Apesar da evolução do comportamento do assistente, alguns pontos ainda exigem estabilização antes da abertura para testes externos.
 
-Sprint 05:
+### 1. Correções contextuais
 
-- testes com familiares e amigos;
-- coleta de feedback com Google Forms;
-- validação com usuários reais.
+O agente ainda apresenta inconsistências ao corrigir lançamentos de forma natural.
+
+Exemplos:
+
+- "era mercado"
+- "internet é moradia"
+- "isso era gasto"
+
+Em alguns casos, o contexto do último lançamento é perdido.
+
+---
+
+### 2. Saúde financeira contextual
+
+O Financial Health já interpreta perguntas sobre situação financeira, porém ainda existem ajustes necessários:
+
+- evitar respostas repetitivas;
+- diferenciar nuance entre perguntas;
+- recalcular corretamente após novos recebimentos.
+
+Exemplo observado:
+
+Mesmo após registrar salário, o assistente ainda mantinha alertas de gastos excessivos.
+
+---
+
+### 3. Temporalidade do dashboard
+
+Os insights financeiros ainda aparentam considerar dados acumulados de forma global.
+
+Necessário:
+
+- recalcular score por período;
+- atualizar dashboard mensalmente;
+- sincronizar Health Score com novas receitas.
+
+---
+
+### 4. Refinamento do parser determinístico
+
+Casos ambíguos ainda dependem de melhorias.
+
+Exemplo:
+
+Entrada:
+
+```txt
+comprei 50
+```
+O sistema pergunta corretamente a categoria, mas ainda requer estabilização da memória contextual em todos os fluxos.
