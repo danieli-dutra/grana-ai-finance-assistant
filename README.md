@@ -4,6 +4,8 @@
 ![Projeto](https://img.shields.io/badge/DIO-Lab%20Vibe%20Coding-blue)
 ![Feito com](https://img.shields.io/badge/feito%20com-Lovable-purple)
 
+🇧🇷 Português | 🇺🇸 English (coming soon)
+
 ![Grana.ai Preview](./assets/preview.png)
 
 🔗 **Acesse o projeto:** https://grana-ai-assistente.lovable.app
