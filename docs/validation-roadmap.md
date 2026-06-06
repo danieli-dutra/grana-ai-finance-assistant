@@ -108,11 +108,11 @@ Testes observacionais com lançamentos ambíguos.
 
 ## Hipótese 05 — Perguntas aumentam confiança
 
-> Usuários confiam mais no sistema quando ele reconhece ambiguidades e pede confirmação antes de registrar um lançamento.
+> Usuários confiam mais no sistema quando ele reconhece ambiguidades, pede confirmação antes de registrar um lançamento e sugere padrões recorrentes sem agir automaticamente.
 
 ### Como validar:
 
-Testes com entradas incompletas ou ambíguas.
+Testes com entradas incompletas, ambíguas e recorrentes.
 
 ### Exemplos:
 
@@ -120,16 +120,24 @@ Testes com entradas incompletas ou ambíguas.
 - "pix de 30"
 - "salvei 100"
 
+Recorrência:
+
+- salário
+- internet
+- streaming
+
 ### Sinais positivos:
 
 - Usuário responde à pergunta do assistente sem frustração;
 - Usuário percebe maior precisão no sistema;
+- Usuário aceita sugestões de recorrência;
 - Redução de lançamentos incorretos.
 
 ### Métrica inicial:
 
 - taxa de confirmação aceita;
-- número de correções após categorização.
+- número de correções após categorização;
+- taxa de aceitação de recorrência.
 
 ---
 
@@ -255,7 +263,10 @@ Exemplos:
 
 Objetivo:
 
-Verificar se o assistente interpreta contexto financeiro e oferece análise útil.
+- Verificar se o assistente interpreta contexto financeiro e oferece análise útil.
+- evita respostas repetitivas;
+- adapta a análise conforme a pergunta;
+- atualiza a análise após novos lançamentos.
 
 ---
 
@@ -317,7 +328,8 @@ Após os testes, priorizar:
 
 - Refinar parser determinístico
 - Melhorar interpretação contextual
-- Aprimorar memória de recorrência
+- Refinar memória de recorrência
+- Melhorar detecção de padrões financeiros
 - Melhorar análise da saúde financeira
 - Reduzir ambiguidade em lançamentos
 - Tornar insights mais personalizados
@@ -352,23 +364,26 @@ Nesta fase, o produto já demonstra:
 
 * reconhecimento de merchants recorrentes (Netflix, Amazon Prime, farmácia, internet etc.);
 * diferenciação entre receitas, despesas e metas;
+* correções contextuais com memória do último lançamento;
+* sugestões de recorrência com confirmação manual;
+* análise contextual da saúde financeira;
 * fallback por confiança para entradas ambíguas;
-* fluxo inicial de correções contextuais em evolução;
+
 * respostas mais humanas e contextualizadas;
 * comportamento orientado a hábitos financeiros.
 
 ## Próximo marco
 
-Estabilização final da arquitetura conversacional antes dos primeiros testes externos controlados.
+Estabilização do núcleo conversacional e início dos primeiros testes externos controlados.
 
 Foco imediato:
 
-- correction state machine;
+- refinamento do correction flow;
+- consistência do Financial Health;
 - memória contextual persistente;
-- recálculo mensal do dashboard;
-- refinamento do Financial Health;
-- redução de respostas repetitivas.
+- dashboard mensal;
+- redução de edge cases conversacionais.
 
 Após estabilização:
 
-Primeiros testes controlados com familiares, amigos e colegas.
+Primeiros testes controlados com familiares, amigos e colegas, seguidos de coleta estruturada de feedback.
