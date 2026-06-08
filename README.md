@@ -372,3 +372,9 @@ O Grana.ai combina conversa e visualização para simplificar o controle finance
 ## 👩‍💻 Sobre mim
 
 Projeto desenvolvido por Danieli Dutra como laboratório prático de UX, produto, IA conversacional e desenvolvimento full stack, explorando como experiências financeiras podem se tornar mais simples, contextuais e humanas.
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+Grana.ai is an experimental product built for learning, portfolio development, and iterative validation of conversational AI applied to personal finance.
