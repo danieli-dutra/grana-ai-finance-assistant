@@ -160,19 +160,22 @@ A proposta aqui é reduzir fricção e aumentar consciência.
 ## 🎯 Próximos passos do produto
 
 ### Fase atual
-✅ Desenvolvimento com Vibe Coding + Lovable  
-✅ Testes internos diários  
-✅ Correções contínuas de UX e IA
-✅ Evolução da arquitetura conversacional
-✅ Transição gradual para desenvolvimento local (VS Code + GitHub)
+
+- ✅ Desenvolvimento com Vibe Coding + Lovable  
+- ✅ Testes internos diários  
+- ✅ Correções contínuas de UX e IA  
+- ✅ Evolução da arquitetura conversacional  
+- ✅ Transição gradual para desenvolvimento local (VS Code + GitHub)  
 
 ### Próxima fase
-🔜 Estabilização do core financeiro (Financial Health + memória contextual)
-🔜 Refinamento da arquitetura de decisão do agente
-🔜 Testes com familiares e amigos  
-🔜 Coleta de feedback com Google Forms  
-🔜 Identificação de padrões reais de uso
-🔜 Iterações orientadas por comportamento do usuário
+
+- 🔜 Estabilização do core financeiro (Financial Health + memória contextual)  
+- 🔜 Refinamento da arquitetura de decisão do agente  
+- 🔜 Testes com familiares e amigos  
+- 🔜 Coleta de feedback com Google Forms  
+- 🔜 Identificação de padrões reais de uso  
+- 🔜 Iterações orientadas por comportamento do usuário  
+
 
 ---
 
