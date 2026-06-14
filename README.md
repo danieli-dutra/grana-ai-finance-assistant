@@ -276,6 +276,24 @@ Melhorias:
   
 ---
 
+## 🧩 Evolução do desenvolvimento
+
+O Grana.ai começou como um experimento de Vibe Coding utilizando Lovable para acelerar prototipação, validação de ideias e testes rápidos de UX conversacional.
+
+À medida que a lógica financeira e a arquitetura do agente se tornaram mais sofisticadas, o projeto passou a evoluir para um fluxo híbrido de desenvolvimento.
+
+Hoje, o produto combina:
+
+* prototipação rápida com IA;
+* refinamento de comportamento via engenharia de prompts;
+* edição direta do código localmente com VS Code;
+* versionamento contínuo com GitHub;
+* evolução gradual da arquitetura para maior controle técnico e escalabilidade.
+
+A proposta não é abandonar o Vibe Coding, mas evoluir do protótipo acelerado para um produto progressivamente mais robusto e sustentável.
+
+---
+
 ## 🔄 Reflexão sobre o processo
 
 ### ✅ O que funcionou bem
