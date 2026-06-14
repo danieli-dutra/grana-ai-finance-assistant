@@ -141,17 +141,18 @@ A proposta aqui é reduzir fricção e aumentar consciência.
 ## ✨ Principais funcionalidades
 
 - 🧾 registro de gastos usando linguagem natural  
-- 🏷️ categorização automática (incluindo streaming e compras online)
-- 🤔 confirmação inteligente para lançamentos ambíguos
+- 🏷️ categorização automática com contexto e merchants
+- 🤔 confirmação inteligente para entradas ambíguas
+- 🔄 correções contextuais por conversa ("isso era mercado", "era meta")
 - 🎯 metas financeiras com acompanhamento de progresso  
-- 💰 contribuição para metas direto pela conversa
-- 🔁 memória de gastos e receitas recorrentes (MVP) 
-- 📈 sugestão automática de poupança baseada na sobra do mês  
-- 📊 dashboard com gráfico e legenda
+- 💰 contribuição para metas direto pelo chat
+- 🔁 memória de gastos e receitas recorrentes (MVP sem automação) 
+- 📈 sugestão contextual de poupança baseada no comportamento do mês
+- 📊 dashboard financeiro integrado
 - ❤️ score de saúde financeira contextual 
-- 🧠 insights baseados em comportamento
+- 🧠 insights fianceiros baseados em comportamento
 - 🔔 notificações leves para confirmação de ações
-- 🧠 pipeline determinístico para decisões financeiras
+- 🧩 arquitetura determinística para tomada de decisão do agente
 
 
 ---
@@ -161,13 +162,17 @@ A proposta aqui é reduzir fricção e aumentar consciência.
 ### Fase atual
 ✅ Desenvolvimento com Vibe Coding + Lovable  
 ✅ Testes internos diários  
-✅ Correções de UX e IA  
+✅ Correções contínuas de UX e IA
+✅ Evolução da arquitetura conversacional
+✅ Transição gradual para desenvolvimento local (VS Code + GitHub)
 
 ### Próxima fase
+🔜 Estabilização do core financeiro (Financial Health + memória contextual)
+🔜 Refinamento da arquitetura de decisão do agente
 🔜 Testes com familiares e amigos  
 🔜 Coleta de feedback com Google Forms  
-🔜 Identificação de padrões de uso reais  
-🔜 Iterações baseadas em dados de usuários
+🔜 Identificação de padrões reais de uso
+🔜 Iterações orientadas por comportamento do usuário
 
 ---
 
