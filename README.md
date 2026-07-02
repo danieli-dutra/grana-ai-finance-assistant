@@ -34,7 +34,7 @@ Ele documenta:
 
 ---
 
-# ❤️ Obrigado por acompanhar o projeto!
+# ❤️ Obrigada por acompanhar o projeto!
 
 Se você chegou até aqui, visite o repositório oficial para acompanhar a evolução do Grana.ai.
 
